@@ -131,11 +131,11 @@ export default function CardClientContent() {
                         {/* Main Curvy Box */}
                         <div className="flex flex-col items-center gap-6 p-10 bg-white/5 rounded-[2rem] border border-white/20 shadow-2xl">
                             <motion.div animate={{ rotate: [0, 10, -10, 0] }} transition={{ duration: 2, repeat: Infinity }}>
-                                <Gift className="w-16 h-16 text-party-yellow drop-shadow-lg" />
+                                <Gift className="w-16 h-16 text-sky-300 drop-shadow-lg" />
                             </motion.div>
 
-                            <h1 className="font-serif text-5xl text-party-cream font-bold">A Special<br />Birthday Wish</h1>
-                            <p className="font-serif text-xl text-party-yellow">for {recipientName}</p>
+                            <h1 className="font-serif text-5xl text-party-cream font-bold">A Happy<br />Blessed Birthday </h1>
+                            <p className="font-serif text-xl text-party-yellow"> {recipientName}</p>
 
                             <button
                                 onClick={handleOpen}
@@ -148,13 +148,13 @@ export default function CardClientContent() {
                         {/* Handcrafted Signature */}
                         <motion.p className="mt-6 text-white/60 text-xs tracking-[0.2em] uppercase font-light"
                         >
-                            Handcrafted & Coded with Love
+                            Handcrafted & Coded with Love ❤️
                         </motion.p>
                     </motion.div>
                 ) : (
                     <motion.div
                         key="message"
-                        className="z-30 flex flex-col items-center max-w-md p-8 text-center bg-white/5 backdrop-blur-sm rounded-3xl border border-white/20 shadow-2xl"
+                        className="z-30 flex flex-col items-center max-w-md p-8 text-center bg-white/5 backdrop-blur-[2px] rounded-3xl border border-white/20 shadow-2xl"
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                     >
@@ -166,12 +166,12 @@ export default function CardClientContent() {
                                 {isMuted ? <VolumeX /> : <Volume2 />}
                             </button>
                         </div>
-                        <PartyPopper className="w-12 h-12 text-party-yellow mb-4" />
+                        <PartyPopper className="w-12 h-12 text-sky-300 mb-4" />
                         <h2 className="font-serif text-3xl text-party-cream mb-2">Happy Birthday,</h2>
                         <h2 className="font-serif text-5xl text-party-yellow font-bold mb-6">{recipientName}!</h2>
 
                         <p className="text-white/90 italic leading-relaxed mb-6">
-                            You are truly the most beautiful, sweet, joyful person I know 💕🌸 You have such a unique, interesting, and delightful personality—it really stands out ✨😊
+                            You are truly the most beautiful, sweetest, joyful person I know 💕🌸 You have such a unique, interesting, and delightful personality—it really stands out ✨😊
                             <br /><br />
                             Wishing you a year filled with laughter, love, and all your favorite things 🎉💖 May it bring new adventures, lasting joy, and wonderful moments ahead 🌍✨ May God bless you with everything your heart desires 🙏
                         </p>
